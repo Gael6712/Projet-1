@@ -1,0 +1,11 @@
+{
+  "name": "fives",
+  "version": "1.0.0",
+  "description": "Site web de mise en relation avec les développeurs de la WildCodeSchool sbx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raphael, Oualid, Jimmy, Fabrice, Gaël",
+  "license": "ISC"
+}
