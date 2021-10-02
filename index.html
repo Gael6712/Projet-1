@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIVES - Dév's référencement</title>
+    <link rel="stylesheet" href="./src/styles.css/coreStyles.css" />
     <link rel="stylesheet" href="./src/styles.css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,13 +15,13 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header>
       <nav>
         <div class="logo">
-          <h4>FIVES</h4>
+          <h1>FIVES</h1>
         </div>
         <ul class="nav-links">
-          <li><a class="current" href="#">Acceuil</a></li>
+          <li><a class="current" href="index.html">Acceuil</a></li>
           <li><a href="communaute.html">Communauté</a></li>
           <li><a href="about.html">A propos</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -28,44 +29,158 @@
         <div class="burger">
           <div class="line1"></div>
           <div class="line2"></div>
-          <div class="line3"></div>
         </div>
       </nav>
-      <div class="fives-bg"><span>FIVES</span></div>
-      <div class="container">
-        <div class="title-fives">
+
+      <div class="banner">
+        <div>
           <h1>FIVES</h1>
           <p>
-            Le réseaux <span>N°1</span> des développeurs de la WildCodeSchool !
+            Le réseaux <span>N°1</span> des développeurs de la WildCodeSchool
           </p>
         </div>
       </div>
     </header>
     <section>
-        <div class="container">
-          <div><img src="./src/img/us.jpg" alt="" width="630px" ></div>
-        <div >
-    <h1>blablabla</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae doloribus nulla dolorum, vitae ducimus tempore quisquam, maxime repellendus ipsam tenetur deleniti, odit quo consequatur deserunt commodi labore culpa repellat.</p>
-  </div>
-        <div>
+      <div class="bloc">
+        <div class="img-left"></div>
+        <div class="bloc-txt">
+          <h2>
+            <span><img src="./src/ico/puce.png" alt='"' /></span> Pourquoi faire
+            appel à nous ?
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum omnis
-            minus eius quam ut libero, quis culpa. Debitis recusandae
-            perspiciatis saepe deserunt soluta est dolore illum dicta, quisquam
-            ut numquam? Officia expedita mollitia a accusantium, consectetur
-            fugiat? Cum sit praesentium culpa autem expedita quo sapiente ipsam
-            ad excepturi, eligendi nisi. Fugiat, dolores asperiores? Repellat
-            velit sequi error perferendis voluptas dolor. Laboriosam laborum quo
-            sapiente. Fugit quod corporis autem obcaecati eius, harum laudantium
-            blanditiis veritatis optio et tempore inventore perspiciatis aperiam
-            possimus mollitia commodi dolorem nemo, quidem quas aliquam
-
+            Nous répondons a vos besoin et ceux de votre activité de façon
+            humaine et professionnelle.
           </p>
+          <p>
+            Nous vous accompagnons dans le recherche d'un développeur et mettons
+            a disposition sur notre plateforme des professionnel issue de la
+            formation dispensé par la WildCodeSchool.
+          </p>
+          <button><a href="about.html">A propos</a></button>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section>
+      <div class="bloc-2">
+        <h2>Notre Objectif pour votre projet :</h2>
+        <div class="our-job">
+          <p>Améliorer votre image</p>
+          <p>Multipliez vos contact</p>
+          <p>Augmenter votre notoriété</p>
+        </div>
+        <div class="bloc-ico">
+          <div class="flex-ico ico1">
+            <img src="./src/ico/responsive.png" alt="" width="99px" />
+            <p>Réalisation de Site internet responsive</p>
+          </div>
+          <div class="flex-ico ico2">
+            <img src="./src/ico/design.png" alt="" width="99px" />
+            <p>Réalisation de Site internet responsive</p>
+          </div>
+          <div class="flex-ico ico3">
+            <img src="./src/ico/referencement.png" alt="" width="99px" />
+            <p>Réalisation de Site internet responsive</p>
+          </div>
+          <div class="flex-ico ico4">
+            <img src="./src/ico/seo.png" alt="" width="99px" />
+            <p>Réalisation de Site internet responsive</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+     <section>
+      <div class="parallax">
+        <div class="overlay">
+           <h2>
+           Notre Engagement, vous fournir une livraison rapide est fonctionnel
+          </h2>
+      </div>
+       
+        </div>
+      </div>
+    </section>
+    <section> <!--
+      <div class="glass-background"> -->
+
+    <!-- <div class="card">
+          <input type="radio" name="select" id="slide_1" checked />
+          <input type="radio" name="select" id="slide_2" />
+          <input type="radio" name="select" id="slide_3" />
+          <input type="checkbox" id="slideImg" />
+
+          <div class="slider">
+            <label for="slide_1" class="slide slide_1"></label>
+            <label for="slide_2" class="slide slide_2"></label>
+            <label for="slide_3" class="slide slide_3"></label>
+          </div>
+
+          <div class="inner_part">
+            <label for="slideImg" class="img">
+              <img class="img_1" src="./src/img/jimmy_picture.jpg" />
+            </label>
+            <div class="content content_1">
+              <div class="title">Jimmy Jung</div>
+              <div class="text">
+                Sa particularité, son efficacité ! Développeur de renom il saura
+                vous guider dans l'intégralité de votre projet, de la maquette a
+                la gestion totale de la sécurité .
+              </div>
+            </div>
+          </div>
+
+          <div class="inner_part">
+            <label for="slideImg" class="img">
+              <img class="img_2" src="./src/img/jimmy_picture.jpg" />
+            </label>
+            <div class="content content_2">
+              <div class="title">Jimmy Jung</div>
+              <div class="text">
+                Sa particularité, son efficacité ! Développeur de renom il saura
+                vous guider dans l'intégralité de votre projet, de la maquette a
+                la gestion totale de la sécurité .
+              </div>
+            </div>
+          </div>
+
+          <div class="inner_part">
+            <label for="slideImg" class="img">
+              <img class="img_3" src="./src/img/jimmy_picture.jpg" />
+            </label>
+            <div class="content content_3">
+              <div class="title">Jimmy Jung</div>
+              <div class="text">
+                Sa particularité, son efficacité ! Développeur de renom il saura
+                vous guider dans l'intégralité de votre projet, de la maquette a
+                la gestion totale de la sécurité .
+              </div>
+            </div>
+          </div>
+        </div> -->
+    <!-- </div>
+    </section>
+    <section>
+      <div class="bloc-contact">
+        <h3>Vous êtes Wilder ?</h3>
+        <h3>Vous souhaitez travailler avec nous sur un projet ?</h3>
+        <p>
+          Nous sommes à votre écoute et garantissons un traitement rapide de
+          votre demande
+        </p>
+      </div>
+      <div class="btn">
+        <button>Nous rejoindre</button>
+        <button>Nous contacter</button>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Mention légale - tout droit reservé - projet réalisé dans un cadre de
+        formation
+      </p>
+    </footer> -->
     <script src="./src/index.js"></script>
   </body>
 </html>
