@@ -28,3 +28,30 @@ navSlide();
 //     mainNav.classList.remove("is-sticky");
 //   }
 // });
+
+/*============== Partie About de Raf =============*/
+let btn = document.getElementById("btn");
+let light = document.getElementById("light");
+let brightness = document.getElementsByClassName(".presentation")
+console.log(brightness)
+function toggleBtn() {
+  btn.classList.toggle("active");
+  light.classList.toggle("on");
+  brightness.classList.toggle("brightness");
+}
+
+var text = document.getElementById("text");
+var splitText = text.innerText.split("");
+
+text.innerHTML = "";
+i = 0;
+setInterval(function () {
+  AjoutDeLettre();
+}, 100);
+
+function AjoutDeLettre() {
+  if (i < splitText.length) {
+    text.innerHTML += splitText[i];
+    i++;
+  }
+}
