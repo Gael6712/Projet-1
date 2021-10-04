@@ -7,16 +7,24 @@ for (let i = 0; i < userCard.length; i++) {
   });
 }
 
-const orangeButton = document.querySelector(".ButtonOrange");
+for (let i = 0; i < userCard.length; i++) {
+  userCard[i].addEventListener("mouseleave", function (event) {
+    event.preventDefault();
+    userCard[i].style.boxShadow = "";
+  });
+}
 
-orangeButton.addEventListener("mouseover", function (event) {
-  event.preventDefault();
-  event.orangeButton.textContent = "Allez viens !";
-});
+function changeText(event) {
+  document.querySelector(".ButtonOrange").innerText = "Allez viens !";
+}
 
-const logo = document.querySelector(".logo");
+document
+  .querySelector(".ButtonOrange")
+  .addEventListener("mouseover", changeText);
 
-logo.addEventListener("mouseover", function (event) {
-  event.preventDefault();
-  event.logo.style.color = "red";
-});
+// const logo = document.querySelector(".logo");
+
+// logo.addEventListener("mouseover", function (event) {
+//   event.preventDefault();
+//   event.logo.style.color = "red";
+// });
