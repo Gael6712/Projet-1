@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIVES - Dév's référencement</title>
-    <link rel="stylesheet" href="./src/styles.css/style.css" />
+    <link rel="stylesheet" href="./src/styles.css/style_communaute.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +14,131 @@
     />
   </head>
   <body>
-    <script src="./src/index.js"></script>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>FIVES</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a class="current" href="communaute.html">Communauté</a></li>
+          <li><a href="about.html">A propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="contenucommunaute">
+
+      <div class="container">
+      
+        <section class="presentation">
+          <h1 id="NosMembres">Tous nos membres</h1>
+          <p>Si toi aussi tu es un wilder et que notre projet te donne envie de nous rejoindre, <br> c'est par ici que ça se passe :</p>
+          <button name="button" type="submit" class="ButtonOrange">Inscription</button>
+        </section>
+  
+        <div class="membres">
+          <form class="UsersFilter" action="membres">
+            <select name="poste" id="poste">
+              <option value="poste occupé">Poste occupé</option>
+              <option value="développeur javascript">développeur javascript</option>
+              <option value="webmaster">webmaster</option>
+              <option value="intégrateur">intégrateur</option>
+              <option value="développeur fullstack">développeur fullstack</option>
+              <option value="développeur front-end">développeur front-end</option>
+              <option value="développeur back-end">développeur back-end</option>
+            </select>
+            <select name="expérience" id="expérience">
+              <option value="expérience minimum">expérience</option>
+              <option value="développeur junior">développeur junior</option>
+              <option value="développeur senior">développeur senior</option>
+            </select>
+      
+            <input type="text" name="localisation" id="localisation" placeholder="Localisation">
+            
+            <input type="text" name="rechercher" id="rechercher" placeholder="Rechercher un membre">
+      
+            <button name="button" type="submit" class="ButtonBlue">Rechercher</button>
+          </form>
+        </div>
+  
+      </div>
+  
+      <div class="Users">
+        <article class="UserCard">
+          <img class="UserImg" src="./src/img/profile_picture.jpg" alt="">
+          <header class="NameUser">Nom Prénom</header>
+          <div class="content">
+            <p>Développeur Fullstack</p>
+            <ul>
+              <li>Compétences :</li>
+              <li>HTML5 et CSS3 : &#9733 &#9733 &#9733 &#9733</li>
+              <li>Javascript : &#9733 &#9733 &#9733</li>
+              <li>Design UX/UI : &#9733 &#9733 &#9733</li>
+              <li>Anglais : niveau B2</li>
+            </ul>
+          </div>
+        </article>
+        <article class="UserCard">
+          <img class="UserImg" src="./src/img/profile_picture.jpg" alt="">
+          <header>Nom Prénom</header>
+          <div class="content">
+            <p>short content</p>
+          </div>
+        </article>
+        <article class="UserCard">
+          <img class="UserImg" src="./src/img/profile_picture.jpg" alt="">
+          <header>Nom Prénom</header>
+          <div class="content">
+            <p>short content</p>
+          </div>
+        </article>
+        <article class="UserCard">
+          <img class="UserImg" src="./src/img/profile_picture.jpg" alt="">
+          <header>Nom Prénom</header>
+          <div class="content">
+            <p>short content</p>
+          </div>
+        </article>
+        <article class="UserCard">
+          <img class="UserImg" src="./src/img/profile_picture.jpg" alt="">
+          <header>Nom Prénom</header>
+          <div class="content">
+            <p>short content</p>
+          </div>
+        </article>
+        <article class="UserCard">
+          <img class="UserImg" src="./src/img/profile_picture.jpg" alt="">
+          <header>Nom Prénom</header>
+          <div class="content">
+            <p>short content</p>
+          </div>
+        </article>
+        <article class="UserCard">
+          <img class="UserImg" src="./src/img/profile_picture.jpg" alt="">
+          <header>Nom Prénom</header>
+          <div class="content">
+            <p>short content</p>
+          </div>
+        </article>
+        <article class="UserCard">
+          <img class="UserImg" src="./src/img/profile_picture.jpg" alt="">
+          <header>Nom Prénom</header>
+          <div class="content">
+            <p>short content</p>
+          </div>
+        </article>
+      </div>
+
+    </div>
+
+    
+
+    <script src="./src/comunaute.js"></script>
   </body>
 </html>

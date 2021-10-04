@@ -149,6 +149,111 @@ nav {
   font-weight: bold;
 }
 
+/*BARRE DE RECHERCHE SECTION COMMUNAUTE
+/*=======================================================*/
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  margin: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.125rem solid black;
+}
+
+select,
+input {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.6rem 1.5rem;
+  padding-top: 0.6rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.ButtonBlue {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 0.6rem 1.5rem;
+  padding-top: 0.6rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/*CARTE DES PROFILS*/
+/*=======================================================*/
+
+.Users {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100vw;
+  height: 100vh;
+  grid-gap: 0.625rem;
+}
+
+.UserCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  height: 50vh;
+  background-color: aqua;
+  border-radius: 0.625rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.25rem solid #26495c;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.UserCard:hover {
+  width: 22vw;
+  height: 54vh;
+  box-shadow: 5px 5px 15px 1px #000000;
+}
+
+.UserCard img {
+  object-fit: contain;
+  margin-bottom: 1rem;
+  width: 13vw;
+  height: auto;
+  border: 0.125rem solid black;
+  border-radius: 0.125rem;
+}
+
+.NameUser {
+  letter-spacing: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+/*PROFIL INDIVIDUEL*/
+/*=======================================================*/
+
+article {
+  width: 100vw;
+  height: 100vh;
+  margin: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #c66b3d;
+  border: .625rem solid black;
+  border-radius: 4rem;
+}
+
+article img {
+  width: 15vw;
+  height: 25vh;
+}
+
+/*FORMULAIRE DE CREATION DE PROFIL*/
+/*=======================================================*/
+
 /* 
 .fives-bg span {
   font-family: "Abril Fatface", cursive;
@@ -227,6 +332,20 @@ nav {
     display: block;
     margin: 0 3vw;
   }
+
+  .Users {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.625rem;
+  }
+
+  .ButtonBlue {
+    justify-content: center;
+  }
 }
 .nav-active {
   transform: translateY(0);
@@ -240,5 +359,19 @@ nav {
   to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
