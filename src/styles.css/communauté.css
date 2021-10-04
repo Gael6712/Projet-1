@@ -1,0 +1,196 @@
+/*BARRE DE RECHERCHE SECTION COMMUNAUTE
+/*=======================================================*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.presentation {
+  width: 100vw;
+  height: 25vh;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.presentation h1 {
+  letter-spacing: 1rem;
+}
+
+.presentation p {
+  padding-top: 2rem;
+}
+
+.presentation button {
+  margin-top: 2rem;
+}
+
+.ButtonOrange {
+  background-color: #c66b3d;
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.membres {
+  width: 90vw;
+  background-color: #707070;
+  border-radius: 2.1875rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+select,
+input,
+.ButtonBlue {
+  width: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.ButtonBlue {
+  background-color: #26495c;
+  color: white;
+  cursor: pointer;
+}
+
+/*CARTE DES PROFILS*/
+/*=======================================================*/
+
+.Users {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 3rem;
+  width: 90vw;
+  height: 100vh;
+  grid-gap: 0.625rem;
+  border-top: 0.125rem solid black;
+}
+
+.UserCard {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  min-width: 20vw;
+  max-width: 25vw;
+  min-height: 50vh;
+  max-height: 60vh;
+  background-color: #26495c;
+  border-radius: 0.625rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.25rem solid #000000;
+}
+
+/*.UserCard:hover {
+  box-shadow: 5px 5px 15px 5px #000000;
+}*/
+
+.UserCard img {
+  object-fit: contain;
+  margin-bottom: 1rem;
+  width: 90%;
+  height: auto;
+  border: 0.125rem solid black;
+  border-radius: 0.125rem;
+}
+
+.NameUser {
+  letter-spacing: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.contenucommunaute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*======================================================*/
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+  .Users {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100%, auto);
+    max-width: 80vw;
+  }
+
+  .UserCard {
+    min-width: 20vw;
+    max-width: 30vw;
+    min-height: 65vh;
+    max-height: 75vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .membres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .presentation {
+    margin-bottom: 4rem;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.625rem;
+    justify-items: center;
+    width: 90%;
+  }
+
+  .ButtonBlue {
+    grid-column: 1 / 3;
+  }
+
+  .Users {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100%, auto);
+    max-width: 80vw;
+  }
+
+  .ButtonOrange {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .UserCard {
+    min-width: 50vw;
+    max-width: 60vw;
+    min-height: 70vh;
+    max-height: 80vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

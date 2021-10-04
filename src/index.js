@@ -1,4 +1,22 @@
 /*   NAVIGATION   */
+const screen = {
+  small: 0,
+  medium: 400,
+  large: 768,
+};
+window.addEventListener("resize", resizeHandler);
+function resizeHandler() {
+  // get window width
+  const iw = window.innerWidth;
+
+  // determine named size
+  let size = null;
+  for (let s in screen) {
+    if (iw >= screen[s]) size = s;
+  }
+
+  console.log(size);
+}
 /*=======================================================*/
 const navSlide = () => {
   const burger = document.querySelector(".burger");
@@ -16,24 +34,27 @@ const navSlide = () => {
 };
 console.log(window);
 navSlide();
-/*   ANIMATION BURGER  */
 
-// /*   STICKY   */
-// window.addEventListener("scroll", function () {
-//   let mainNav = document.querySelector("#mainNav");
+/* Overlay - Scroll */
+/*=======================================================*/
+window.onscroll = function () {
+  if (
+    document.documentElement.scrollTop - goIn.offsetHeight < goIn.offsetTop &&
+    document.documentElement.scrollTop + goIn.offsetHeight * 1 > goIn.offsetTop
+  ) {
+    goIn.style.cssText = "transform:scale(1);  opacity:1;  transition:1s";
+  } else {
+    goIn.style.cssText = "transform:scale(0);  opacity:0;  ;transition:1s";
+  }
+};
 
-//   if (window.pageYOffset > 0) {
-//     mainNav.classList.add("is-sticky");
-//   } else {
-//     mainNav.classList.remove("is-sticky");
-//   }
-// });
-
+/*======================================================================================================================================*/
 /*============== Partie About de Raf =============*/
+
 let btn = document.getElementById("btn");
 let light = document.getElementById("light");
-let brightness = document.getElementsByClassName(".presentation")
-console.log(brightness)
+let brightness = document.getElementsByClassName(".presentation");
+console.log(brightness);
 function toggleBtn() {
   btn.classList.toggle("active");
   light.classList.toggle("on");
