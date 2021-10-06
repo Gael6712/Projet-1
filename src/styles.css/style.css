@@ -6,7 +6,7 @@
     url("../img/devop.png") no-repeat, url("../img/pngegg\ \(6\).png") no-repeat;
   background-position: bottom right, left top 10%, left top;
   background-size: contain;
-  height: 92vh;
+  height: 100vh;
 }
 .banner div {
   display: flex;
@@ -75,15 +75,47 @@ section {
   line-height: 2.3rem;
   margin: 1rem 0 1rem 0;
 }
-button {
+.button {
+  background-color: var(--background-card-color);
+  box-shadow: 0 5px 0 var(--primary-color);
+  color: var(--background-color);
+  padding: 1em 1.5em;
+  position: relative;
+
+  display: inline-block;
+}
+
+/* .button {
   margin: 1.8rem;
+<<<<<<< HEAD
+
+  background-color: transparent;
+  border-radius: 0.625rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgb(90, 64, 7);
+  background-color: var(--background-card-color);
+  background-image: linear-gradient(
+    to top left,
+    rgba(144, 5, 5, 0.2),
+    rgba(168, 0, 0, 0.2) 30%,
+    rgba(200, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(80, 31, 31, 0.6);
+=======
   background-color: transparent;
   border-radius: 10%;
   border-color: var(--elementDecoration-color);
+>>>>>>> 6705444fc8dc0eec47c3c8102e9039e389cb6650
   padding: 0.854rem;
   width: 20%;
   cursor: pointer;
 }
+.button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+} */
 /*   SECTION 2   */
 /*=======================================================*/
 section h2 {
@@ -113,7 +145,6 @@ section h2 {
 }
 .bloc-2 div:nth-child(4) {
   grid-area: 3 / 1 / 4 / 3;
-  text-align: center;
 }
 .our-job {
   display: flex;
@@ -169,25 +200,6 @@ section h2 {
   opacity: 0;
   transition: 4s;
 }
-/*   SECTION 4 COMMUNITY   */
-/* ======================================================= */
-body section:nth-child(5) {
-  padding: 0;
-  /* display: flex;
-  align-items: center; */
-}
-.glass-background {
-  height: 80vh;
-  width: 100vw;
-  background-color: var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* ======================================================= */
-/* ======================================================= */
-
 /*  CONTACT  */
 /* ======================================================= */
 
@@ -196,7 +208,7 @@ body section:nth-child(5) {
   display: block;
   text-align: center;
   height: 30vh;
-  width: 100vw;
+  width: 100%;
 }
 .bloc-contact h3 {
   margin-top: 5.75rem;
@@ -215,6 +227,22 @@ body section:nth-child(5) {
 /*=======================================================*/
 /*============  RESPONSIVE  ================*/
 /*=======================================================*/
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .nav-links {
+    width: 60%;
+  }
+  .banner {
+    background-size: 56.25rem;
+  }
+  .banner div {
+    padding: 0;
+  }
+  .bloc-txt h2 {
+    display: inline-grid;
+  }
+}
+
 /* @custom-media --mobile(max-width: 768px); */
 
 @media screen and (max-width: 768px) {
@@ -224,12 +252,16 @@ body section:nth-child(5) {
   .banner {
     max-height: 75vh;
   }
+  .banner div {
+    padding: 0;
+  }
   .bloc {
     color: var(--overlay-txt-color);
     flex-direction: column;
     text-align: center;
     margin: 0.125rem;
   }
+
   .bloc h2 {
     margin: 3.75rem 0 3.85rem 0;
     color: var(--overlay-txt-color);
@@ -257,6 +289,50 @@ body section:nth-child(5) {
 
   .bloc-2 {
     display: block;
+  }
+  .btn button {
+    margin: 5rem;
+    padding: 1rem;
+    border: 1px solid var(--elementDecoration-color);
+  }
+  .ico2 {
+    margin: auto;
+  }
+  .ico3 {
+    margin: auto;
+  }
+}
+
+/*   ANIMATION FIVES HEADER   */
+/* ======================================================= */
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
