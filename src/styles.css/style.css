@@ -87,6 +87,7 @@ section {
 
 /* .button {
   margin: 1.8rem;
+<<<<<<< HEAD
 
   background-color: transparent;
   border-radius: 0.625rem;
@@ -102,6 +103,11 @@ section {
   );
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(80, 31, 31, 0.6);
+=======
+  background-color: transparent;
+  border-radius: 10%;
+  border-color: var(--elementDecoration-color);
+>>>>>>> 6705444fc8dc0eec47c3c8102e9039e389cb6650
   padding: 0.854rem;
   width: 20%;
   cursor: pointer;
@@ -294,6 +300,39 @@ section h2 {
   }
   .ico3 {
     margin: auto;
+  }
+}
+
+/*   ANIMATION FIVES HEADER   */
+/* ======================================================= */
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 

@@ -133,7 +133,18 @@ nav {
   height: 0.437rem;
   border-radius: 0.5625rem;
 }
-
+/*=======================================================*/
+/*   FOOTER   */
+/*=======================================================*/
+footer {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: var(--background-color);
+  background-color: var(--color-txt);
+  height: 7rem;
+  width: 100vmax;
+}
 /*=======================================================*/
 /*   FOOTER   */
 /*=======================================================*/
