@@ -1,22 +1,4 @@
 /*   NAVIGATION   */
-const screen = {
-  small: 0,
-  medium: 400,
-  large: 768,
-};
-window.addEventListener("resize", resizeHandler);
-function resizeHandler() {
-  // get window width
-  const iw = window.innerWidth;
-
-  // determine named size
-  let size = null;
-  for (let s in screen) {
-    if (iw >= screen[s]) size = s;
-  }
-
-  console.log(size);
-}
 /*=======================================================*/
 const navSlide = () => {
   const burger = document.querySelector(".burger");
