@@ -140,7 +140,7 @@ function getStars(amount) {
 /*RECHERCHE PAR POSTE*/
 
 userPoste.addEventListener("change", (e) => {
-  if (e.target.value != "Poste occupé") {
+  if (e.target.value != "poste occupé") {
     const userCardFilter = userCards.filter((user) => {
       const emploi = user.poste.toLowerCase();
 
@@ -153,6 +153,8 @@ userPoste.addEventListener("change", (e) => {
 });
 
 displayAllUserCards(userCards);
+
+//userPoste.addEventListener("change")
 
 /*RECHERCHE PAR LOCALISATION*/
 
