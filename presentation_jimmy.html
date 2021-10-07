@@ -22,10 +22,10 @@
           <h1>FIVES</h1>
         </div>
         <ul class="nav-links">
-          <li><a class="current" href="index.html">Acceuil</a></li>
-          <li><a href="communaute.html">Communauté</a></li>
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a class="current" href="communaute.html">Communauté</a></li>
           <li><a href="about.html">A propos</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="formular.html">Contact</a></li>
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -82,6 +82,35 @@
             pour vous les meilleurs web designer et vous met en relation avec
             eux pour la réalisation de votre design.
           </p>
+
+          <div class="modal" id="modalC">
+            <div class="modal-content">
+              <div class="contact-form">
+                <a class="close">&times;</a>
+                <h3>Contacter Nous</h3>
+                <div>
+                  <input
+                    type="fname"
+                    type="text"
+                    name="name"
+                    placeholder="Nom"
+                  />
+                  <input type="text" name="name" placeholder="Email" />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Numéro de téléphone"
+                  />
+                  <input type="text" name="name" placeholder="Site Web" />
+                </div>
+                <span>Message</span>
+                <div>
+                  <textarea rows="4"></textarea>
+                </div>
+                <button type="submit" href="/">Envoyer</button>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
 
@@ -101,7 +130,9 @@
           <p>Jimmy CARTER</p>
           <p>37 N Ash St, GA 31044 Jeffersonville</p>
           <p>Mobile : 06.01.03.02.01</p>
-          <button class="btn">Me contacter</button>
+          <button class="btn buttonContact" data-modal="modalC">
+            Me contacter
+          </button>
         </div>
       </aside>
     </div>
