@@ -1,0 +1,153 @@
+/* OUALID WORKS OUALID WORKS OUALID WORKS OUALID WORKS OUALID WORKS OUALID WORKS OUALID WORKS OUALID WORKS */
+
+body {
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* La div du formulaires */
+
+.formdiv {
+  margin: auto;
+
+  height: 100vh;
+}
+
+/* Les polices d'ecriture */
+
+@font-face {
+  font-family: "PokemonClassic1";
+  src: url("../fonts/PokemonClassic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RealPokemon";
+  src: url("../fonts/PokemonKiddyDing.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PokemonSolid";
+  src: url("../fonts/PokemonSolid.ttf") format("truetype");
+}
+
+/* LE TITRE */
+
+h2 {
+  margin-left: 27%;
+  margin-top: 7%;
+  font-family: "PokemonSolid";
+  font-size: xx-large;
+  letter-spacing: 0.5rem;
+}
+
+/* LES POKEMON ICON */
+
+.pikachu {
+  font-family: "RealPokemon";
+  font-size: 50px;
+}
+
+.tortank {
+  font-family: "RealPokemon";
+  font-size: 40px;
+}
+
+.florisare {
+  font-family: "RealPokemon";
+  font-size: 40px;
+}
+
+.dracaufeu {
+  font-family: "RealPokemon";
+  font-size: 40px;
+}
+
+/* LES POKEMON ICONS */
+
+/* LE TITRE */
+
+.blockname {
+  margin-top: 3%;
+}
+
+.labelname {
+  margin-left: 27%;
+  font-family: "PokemonClassic1";
+}
+
+.nameinput {
+  width: 50%;
+  margin-left: 27%;
+  margin-top: 1%;
+  background-image: url("../img/pika2.gif");
+  background-repeat: no-repeat;
+  background-position: top right;
+  border: groove #222224 3px;
+  box-shadow: 6px 6px 0px black;
+
+  font-family: "PokemonClassic1";
+}
+
+.blockmail {
+  margin-top: 3%;
+}
+
+.labelmail {
+  margin-left: 27%;
+  font-family: "PokemonClassic1";
+}
+
+input {
+  padding: 0.6rem;
+}
+
+.mailinput {
+  width: 50%;
+
+  margin-left: 27%;
+  margin-top: 1%;
+  background-image: url("../img/pika4.gif");
+  background-repeat: no-repeat;
+  background-position: top right;
+  border: groove #222224 3px;
+  box-shadow: 6px 6px 0px black;
+  font-family: "PokemonClassic1";
+}
+
+.blockarea {
+  margin-top: 3%;
+}
+
+.labelarea {
+  margin-left: 27%;
+  font-family: "PokemonClassic1";
+}
+
+.areainput {
+  margin-top: 3%;
+  margin-left: 27%;
+  width: 50%;
+  height: 70%;
+  margin-top: 1%;
+  color: #f0f0f0;
+  font-family: "PokemonClassic1";
+}
+
+textarea {
+  background-image: url("../img/pokeball2.gif");
+  background-position: center;
+  box-shadow: 6px 6px 0px black;
+  border: groove #222224 3px;
+  padding: 0.95rem;
+}
+
+.formErrorMail {
+  color: red;
+  margin-left: 27%;
+  margin-top: 10px;
+}
+.formSuccessMail {
+  color: green;
+  margin-left: 27%;
+  margin-top: 10px;
+}

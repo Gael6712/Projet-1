@@ -1,3 +1,10 @@
+<!-- 
+
+ * Auteur : AURY Gaêl
+ *   Projet FIVES 
+
+-->
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -28,7 +35,7 @@
           <li><a class="current" href="index.html">Acceuil</a></li>
           <li><a href="communaute.html">Communauté</a></li>
           <li><a href="about.html">A propos</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="formular.html">Contact</a></li>
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -108,7 +115,7 @@
         </h2>
       </div>
     </section>
-    <section>
+    <section class="contact">
       <div class="bloc-contact">
         <h3>Vous êtes Wilder ?</h3>
         <h3>Vous souhaitez travailler avec nous sur un projet ?</h3>
@@ -116,10 +123,34 @@
           Nous sommes à votre écoute et garantissons un traitement rapide de
           votre demande
         </p>
-      </div>
-      <div class="btn">
+
         <button>Nous rejoindre</button>
-        <button>Nous contacter</button>
+        <button class="buttonContact" data-modal="modalC">
+          Nous contacter
+        </button>
+      </div>
+      <div class="modal" id="modalC">
+        <div class="modal-content">
+          <div class="contact-form">
+            <a class="close">&times;</a>
+            <h3>Contacter Nous</h3>
+            <div>
+              <input type="fname" type="text" name="name" placeholder="Nom" />
+              <input type="text" name="name" placeholder="Email" />
+              <input
+                type="text"
+                name="name"
+                placeholder="Numéro de téléphone"
+              />
+              <input type="text" name="name" placeholder="Site Web" />
+            </div>
+            <span>Message</span>
+            <div>
+              <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" href="/">Envoyer</button>
+          </div>
+        </div>
       </div>
     </section>
     <footer>
