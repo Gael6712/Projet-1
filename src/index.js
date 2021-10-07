@@ -1,4 +1,10 @@
+/**
+ * Auteur : AURY Gaêl
+ *   Projet FIVES
+ */
+
 /*   NAVIGATION   */
+/*=======================================================*/
 const screen = {
   small: 0,
   medium: 400,
@@ -27,6 +33,7 @@ const navSlide = () => {
     burger.classList.toggle("toggle");
 
     /*   ANIMATION   */
+    /*=======================================================*/
     navLinks.forEach((link, index) => {
       link.style.animation = `navLink 0.8s ease forwards ${index / 4}s`; // On divise la transition par 4
     });
@@ -45,6 +52,30 @@ window.onscroll = function () {
     goIn.style.cssText = "transform:scale(1);  opacity:1;  transition:1s";
   } else {
     goIn.style.cssText = "transform:scale(0);  opacity:0;  ;transition:1s";
+  }
+};
+
+// FROM
+/*=================================================*/
+
+let modalBtn = [...document.querySelectorAll(".buttonContact")];
+modalBtn.forEach((btn) => {
+  btn.onclick = () => {
+    let modal = btn.getAttribute("data-modal");
+    document.getElementById(modal).style.display = "block";
+  };
+});
+
+let closeBtn = [...document.querySelectorAll(".close")];
+closeBtn.forEach((btn) => {
+  btn.onclick = () => {
+    let modal = btn.closest(".modal");
+    modal.style.display = "none";
+  };
+});
+window.onclick = function (event) {
+  if (event.target.className === "modal") {
+    event.target.style.display = "none";
   }
 };
 

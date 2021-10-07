@@ -1,3 +1,8 @@
+/**
+ * Auteur : AURY Gaêl
+ *   Projet FIVES
+ */
+
 class UserCard {
   constructor(imgUser, skill, contenueUser, fullName) {
     this.imgUser = imgUser;
