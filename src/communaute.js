@@ -20,6 +20,7 @@ const userCards = [
       { skill: "Anglais", level: "3" },
     ],
     picture: "./src/img/profile_picture.jpg",
+    url: "presentation_jimmy.html",
   },
   {
     nom: "Aury",
@@ -34,6 +35,7 @@ const userCards = [
       { skill: "Anglais", level: "5" },
     ],
     picture: "./src/img/profile_picture.jpg",
+    url: "#",
   },
   {
     nom: "Dubois",
@@ -48,6 +50,7 @@ const userCards = [
       { skill: "Anglais", level: "5" },
     ],
     picture: "./src/img/profile_picture.jpg",
+    url: "#",
   },
   {
     nom: "Sérapion",
@@ -62,6 +65,7 @@ const userCards = [
       { skill: "Anglais", level: "5" },
     ],
     picture: "./src/img/profile_picture.jpg",
+    url: "#",
   },
   {
     nom: "Kheloufi",
@@ -76,6 +80,7 @@ const userCards = [
       { skill: "Anglais", level: "5" },
     ],
     picture: "./src/img/profile_picture.jpg",
+    url: "#",
   },
 ];
 
@@ -90,7 +95,10 @@ const userLoc = document.getElementById("localisation");
 function displayAllUserCards(cards) {
   const render = cards
     .map((card) => {
-      return `<article class="UserCard" id="cardUser">
+      return `
+      
+  <a href="${card.url}">
+    <article class="UserCard" id="cardUser">
     <img class="UserImg" src="${card.picture}" alt="">
     <header class="NameUser">${card.nom} - ${card.prenom}</header>
     <div class="content">
@@ -101,7 +109,8 @@ function displayAllUserCards(cards) {
         ${getSkills(card.skills)}
       </ul>
     </div>
-  </article>`;
+  </article>
+  </a>`;
     })
     .join("");
   sectionCard.innerHTML = render;
@@ -130,12 +139,12 @@ function getStars(amount) {
 
 /*RECHERCHE PAR POSTE*/
 
-userPoste.addEventListener("input", (e) => {
-  if (userPoste != "Poste occupé") {
+userPoste.addEventListener("change", (e) => {
+  if (e.target.value != "poste occupé") {
     const userCardFilter = userCards.filter((user) => {
-      const emploi = user.poste;
+      const emploi = user.poste.toLowerCase();
 
-      return emploi == userPoste;
+      return emploi == e.target.value.toLowerCase();
     });
     displayAllUserCards(userCardFilter);
   } else {
@@ -144,6 +153,8 @@ userPoste.addEventListener("input", (e) => {
 });
 
 displayAllUserCards(userCards);
+
+//userPoste.addEventListener("change")
 
 /*RECHERCHE PAR LOCALISATION*/
 

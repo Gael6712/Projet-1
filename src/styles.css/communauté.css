@@ -96,14 +96,16 @@ input,
   border: 0.25rem solid #000000;
 }
 
-.NameUser {
+.NameUser,
+.Users a {
+  color: var(--color-txt);
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
   margin-bottom: 0.2rem;
 }
 
 .UserCard h5 {
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   text-align: center;
 }
