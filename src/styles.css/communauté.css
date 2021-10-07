@@ -89,11 +89,35 @@ input,
   max-width: 25vw;
   min-height: 55vh;
   max-height: 65vh;
-  background-color: #26495c;
+  background-color: #c4a35a;
   border-radius: 0.625rem;
   padding: 1rem;
   margin: 1rem;
   border: 0.25rem solid #000000;
+}
+
+.NameUser,
+.Users a {
+  color: var(--color-txt);
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.UserCard h5 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.UserCard h6 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.UserCard:hover {
+  box-shadow: 5px 5px 15px 5px #000000;
+  cursor: pointer;
 }
 
 .content ul {
@@ -105,16 +129,11 @@ input,
 
 .UserCard img {
   object-fit: contain;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   width: 90%;
   height: auto;
   border: 0.125rem solid black;
   border-radius: 0.125rem;
-}
-
-.NameUser {
-  letter-spacing: 0.7rem;
-  margin-bottom: 0.5rem;
 }
 
 .contenucommunaute {
