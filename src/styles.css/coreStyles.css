@@ -69,6 +69,7 @@ h6 {
 p {
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-bottom: 0.625rem;
 }
 
 /*font-family: 'Abril Fatface', cursive;
@@ -225,16 +226,16 @@ footer {
   transform: rotate(45deg) translate(-0.9rem, -0.3rem);
 }
 /*=================== Potentiel scrollbarr===============*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 1em;
 }
 
-::-webkit-scrollbar-track{
-  background:var(--background-color);
+::-webkit-scrollbar-track {
+  background: var(--background-color);
   border-radius: 100vw;
-  margin-block:  0.2em;
+  margin-block: 0.2em;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: var(--primary-color);
   border-radius: 100vw;
 }
