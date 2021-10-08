@@ -19,7 +19,7 @@ class UserCard {
 const user1 = new UserCard(
   "https://www.cjoint.com/doc/21_10/KJihB3yLKfJ_DSC-0971.jpg",
   "https://diapogram.com/upload/2018/04/11/20180411155524-0a1fb960.jpg",
-  "AURY Gaël",
+  "Aury Gaël",
   "Expert UX - développeur JS",
   "Spécialiser en prototypages et maquettes web, aime les licornes"
 );
@@ -33,11 +33,11 @@ const user2 = new UserCard(
 );
 
 const user3 = new UserCard(
-  "https://us.123rf.com/450wm/fizkes/fizkes1904/fizkes190400933/121256725-head-shot-portrait-of-smiling-businessman-d-%C3%A2ge-moyen-assis-au-bureau-%C3%A0-la-recherche-%C3%A0-huis-clos-dir.jpg?ver=6",
-  "http://arhumatic.fr/img/cms/p2-differents-rhums-arranges_1.jpg",
-  "Rafaël",
+  "https://www.cjoint.com/doc/21_10/KJii4mDyTzJ_yeee.jpg",
+  "https://aws.vdkimg.com/tv_show/3/7/8/6/37863_backdrop_scale_740x172.jpg",
+  "Oualid Kheloufi",
   "Expert CSS - En formation",
-  "Vous voulez du Rhum arrenger ? On peu s'arrenger !!"
+  "Passionnée par les pokémons et les Animes"
 );
 const cardsBackground = document.querySelector(".cards");
 let arrayUser = [user1, user2, user3];

@@ -206,6 +206,8 @@ section h2 {
 /* ======================================================= */
 .cards-background {
   background-color: var(--primary-color);
+  /* background: url(../img/milky-way-starry-sky-night-sky-star-956999.jpeg)
+    center/cover no-repeat; */
   text-align: center;
 }
 .cards {
@@ -222,7 +224,7 @@ section h2 {
 
 .card {
   background-color: var(--background-color);
-  width: 20rem;
+  width: 22rem;
   border-radius: 1.5625rem;
   background-color: var(background-color);
   display: flex;
@@ -231,6 +233,10 @@ section h2 {
   justify-content: center;
   margin: 2rem 0;
   box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.2);
+}
+.card p {
+  font-size: clamp(0.999rem, 1.8vw, 1.3rem);
+  margin: 0 0.75rem 0 0.75rem;
 }
 
 .card h5 {
@@ -251,10 +257,6 @@ section h2 {
   font-weight: 400;
   color: var(--background-color);
   padding: 0.625rem;
-}
-.cards-background p {
-  font-size: clamp(1.25rem, 1vw, 2rem);
-  padding: 1.5625rem;
 }
 
 .card .btn-card {
@@ -294,6 +296,7 @@ img.card-img {
   border: 0.787rem solid var(--background-color);
   box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.2);
 }
+
 .social-media {
   width: 100%;
   list-style: none;
@@ -315,7 +318,7 @@ img.card-img {
   background: url(../img/halftone-light.png) center/cover no-repeat;
   display: block;
   text-align: center;
-  height: 30vh;
+  margin: auto;
   width: 100%;
 }
 .bloc-contact h2 {

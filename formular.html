@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIVES - Dév's référencement</title>
+    <link rel="stylesheet" href="./src/styles.css/coreStyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amita&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css/formular.css" />
+  </head>
+  <nav>
+    <div class="logo">
+      <h1>FIVES</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="communaute.html">Communauté</a></li>
+      <li><a href="about.html">A propos</a></li>
+      <li><a  class="current"href="formular.html">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+    </div>
+  </nav>
+  <body>
+      
+<section class="formdiv">
+<h2>Attraper un dev ! <span class="pikachu">Q</span> </h2>
+    <form method="post" action="traitement.php">
+        <p class="blockname">
+            <label class="labelname">Votre nom <span class="tortank">F</span></label>
+            <br />
+            <input type="text" name="pseudo" class="nameinput" />
+            
+        </p>
+       
+        <p class="blockmail">
+            <label class="labelmail">Adress Mail <span class="florisare">C</span></label> 
+            <br />
+             <input type="text" name="mail" class="mailinput" />
+             <div class="formErrorMail" id="msgErrorMail"></div>
+            
+        </p>
+        <p class="blockarea">
+            <label for="ameliorer" class="labelarea">
+            Envoyer nous un message ! <span class="dracaufeu">D</span>
+            </label>
+            <br />
+            
+            <textarea name="ameliorer" id="ameliorer" rows="10" cols="50" class="areainput">
+            what is your favorite starter ?
+            </textarea> 
+        </p>
+    </form>
+</section>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>

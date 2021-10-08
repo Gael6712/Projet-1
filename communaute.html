@@ -23,7 +23,7 @@
         <li><a href="index.html">Accueil</a></li>
         <li><a class="current" href="communaute.html">Communauté</a></li>
         <li><a href="about.html">A propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="formular.html">Contact</a></li>
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -40,7 +40,12 @@
             nous rejoindre, <br />
             c'est par ici que ça se passe :
           </p>
-          <button data-modal-target="#modal" name="button" type="submit" class="ButtonOrange">
+          <button
+            data-modal-target="#modal"
+            name="button"
+            type="submit"
+            class="ButtonOrange"
+          >
             Inscription
           </button>
           <div class="modal" id="modal">
@@ -48,13 +53,28 @@
               <div class="title">Formulaire d'Inscription</div>
               <button data-close-button class="close-button">&times;</button>
             </div>
-      
+
             <div class="modal-body">
               <form action="inscription" class="inscription">
-                <input type="text" name="firstname" id="firstname" placeholder="firstname">
-                <input type="text" name="lastname" id="lastname" placeholder="lastname">
-                <input type="email" name="email" id="email" placeholder="@">
-                <input type="url" name="url" id="url" placeholder="Votre portfolio">
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="firstname"
+                />
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="lastname"
+                />
+                <input type="email" name="email" id="email" placeholder="@" />
+                <input
+                  type="url"
+                  name="url"
+                  id="url"
+                  placeholder="Votre portfolio"
+                />
               </form>
             </div>
           </div>
