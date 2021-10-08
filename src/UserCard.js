@@ -28,7 +28,7 @@ const user2 = new UserCard(
   "https://lejournalminimal.fr/wp-content/uploads/2016/11/702-Official_presidential_portrait_of_Jimmy_Carter_by_Herbert_E._Abrams_1982-copie.jpg",
   "https://f.hellowork.com/helloworkplace/2014/09/expatriation-USA-1200x633.jpg",
   "Jimmy Carter",
-  "Exepert Html",
+  "Expert Html",
   "Développeur et éleveur de poulet et président des Etats punis  !"
 );
 
