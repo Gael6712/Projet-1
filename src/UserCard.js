@@ -4,36 +4,40 @@
  */
 
 class UserCard {
-  constructor(imgUser, fullName, skill, userContent) {
+  constructor(imgUser, backgroundUser, fullName, skill, userContent) {
     this.imgUser = imgUser;
+    this.backgroundUser = backgroundUser;
     this.fullName = fullName;
     this.skill = skill;
     this.userContent = userContent;
   }
   user() {
-    return `${this.imgUser} ${this.fullName} ${this.skill} ${this.userContent}`;
+    return `${this.imgUser} ${this.backgroundUser} ${this.fullName} ${this.skill} ${this.userContent}`;
   }
 }
 
 const user1 = new UserCard(
-  "https://us.123rf.com/450wm/fizkes/fizkes1904/fizkes190400933/121256725-head-shot-portrait-of-smiling-businessman-d-%C3%A2ge-moyen-assis-au-bureau-%C3%A0-la-recherche-%C3%A0-huis-clos-dir.jpg?ver=6",
+  "https://www.cjoint.com/doc/21_10/KJihB3yLKfJ_DSC-0971.jpg",
+  "https://diapogram.com/upload/2018/04/11/20180411155524-0a1fb960.jpg",
   "AURY Gaël",
   "Expert UX - développeur JS",
-  "Développeur expérimenté et spécialiser en prototypages et maquettes"
+  "Spécialiser en prototypages et maquettes web, aime les licornes"
 );
 
 const user2 = new UserCard(
-  "https://us.123rf.com/450wm/fizkes/fizkes1904/fizkes190400933/121256725-head-shot-portrait-of-smiling-businessman-d-%C3%A2ge-moyen-assis-au-bureau-%C3%A0-la-recherche-%C3%A0-huis-clos-dir.jpg?ver=6",
-  "Jimmy",
-  "Expert UX - développeur JS",
-  "Développeur expérimenté et spécialiser en prototypages et maquettes"
+  "https://lejournalminimal.fr/wp-content/uploads/2016/11/702-Official_presidential_portrait_of_Jimmy_Carter_by_Herbert_E._Abrams_1982-copie.jpg",
+  "https://f.hellowork.com/helloworkplace/2014/09/expatriation-USA-1200x633.jpg",
+  "Jimmy Carter",
+  "Exepert Html",
+  "Développeur et éleveur de poulet et président des Etats punis  !"
 );
 
 const user3 = new UserCard(
   "https://us.123rf.com/450wm/fizkes/fizkes1904/fizkes190400933/121256725-head-shot-portrait-of-smiling-businessman-d-%C3%A2ge-moyen-assis-au-bureau-%C3%A0-la-recherche-%C3%A0-huis-clos-dir.jpg?ver=6",
-  "Raph",
-  "Expert UX - développeur JS",
-  "Développeur expérimenté et spécialiser en prototypages et maquettes"
+  "http://arhumatic.fr/img/cms/p2-differents-rhums-arranges_1.jpg",
+  "Rafaël",
+  "Expert CSS - En formation",
+  "Vous voulez du Rhum arrenger ? On peu s'arrenger !!"
 );
 const cardsBackground = document.querySelector(".cards");
 let arrayUser = [user1, user2, user3];
@@ -48,6 +52,10 @@ function generateUser() {
 
     const cardBody = document.createElement("div");
     cardBody.className = "card-body";
+
+    const backgroundUser = document.createElement("img");
+    backgroundUser.className = "background-img";
+    backgroundUser.src = user.backgroundUser;
 
     const cardImg = document.createElement("img");
     cardImg.className = "card-img";
@@ -70,6 +78,7 @@ function generateUser() {
     btn.innerText = "Message";
 
     cards.appendChild(card);
+    cardBody.appendChild(backgroundUser);
     card.appendChild(cardBody);
     cardBody.appendChild(cardImg);
     cardBody.appendChild(userName);
