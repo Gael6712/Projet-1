@@ -40,9 +40,24 @@
             nous rejoindre, <br />
             c'est par ici que ça se passe :
           </p>
-          <button name="button" type="submit" class="ButtonOrange">
+          <button data-modal-target="#modal" name="button" type="submit" class="ButtonOrange">
             Inscription
           </button>
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">Formulaire d'Inscription</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+      
+            <div class="modal-body">
+              <form action="inscription" class="inscription">
+                <input type="text" name="firstname" id="firstname" placeholder="firstname">
+                <input type="text" name="lastname" id="lastname" placeholder="lastname">
+                <input type="email" name="email" id="email" placeholder="@">
+                <input type="url" name="url" id="url" placeholder="Votre portfolio">
+              </form>
+            </div>
+          </div>
         </section>
         
         <div class="membres">
@@ -89,6 +104,7 @@
         
       </div>
     </div>
+    <div id="overlay"></div>
 
     <script src="./src/communaute.js" defer></script>
     <script src="./src/index.js" defer></script>

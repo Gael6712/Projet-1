@@ -36,11 +36,87 @@
   border-radius: 0.5rem;
 }
 
+/*=================FENETRE POP UP====================*/
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 0.0625rem solid black;
+  border-radius: 0.625rem;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 0.625rem 0.9375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.0625rem solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 0.625rem 0.9375rem;
+}
+
+.inscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#firstname,
+#lastname,
+#email,
+#url {
+  margin-top: 1rem;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/*===================================================*/
 .membres {
   width: 90vw;
   background-color: #707070;
   border-radius: 2.1875rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-bottom: 3rem;
 }
 
@@ -165,6 +241,7 @@ input,
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 5rem;
   }
 
   .presentation {
@@ -209,10 +286,21 @@ input,
   }
 }
 
+@media screen and (max-width: 688px) {
+  .membres {
+    margin-top: 10rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  .membres {
+    margin-top: 10rem;
+  }
 }
+
