@@ -1,12 +1,17 @@
+/**
+ * Auteur : AURY Gaêl
+ *   Projet FIVES
+ */
+
 class UserCard {
-  constructor(imgUser, skill, contenueUser, fullName) {
+  constructor(imgUser, fullName, skill, userContent) {
     this.imgUser = imgUser;
     this.fullName = fullName;
     this.skill = skill;
-    this.contenueUser = contenueUser;
+    this.userContent = userContent;
   }
   user() {
-    return `${this.fullName} ${this.skill} ${this.contenueUser}`;
+    return `${this.imgUser} ${this.fullName} ${this.skill} ${this.userContent}`;
   }
 }
 
@@ -30,34 +35,61 @@ const user3 = new UserCard(
   "Expert UX - développeur JS",
   "Développeur expérimenté et spécialiser en prototypages et maquettes"
 );
+const cardsBackground = document.querySelector(".cards");
+let arrayUser = [user1, user2, user3];
 
-const arrayUser = [user1, user2, user3];
+function generateUser() {
+  arrayUser.forEach((user) => {
+    const cards = document.createElement("div");
+    cards.className = "cards";
 
-function generateUser(users) {
-  const userCard = document.createElement("div");
-  userCard.className = "userCard";
+    const card = document.createElement("div");
+    card.className = "card";
 
-  const divInnerCard = document.createElement("div");
-  divInnerCard.className = "imgUser innerCard";
+    const cardBody = document.createElement("div");
+    cardBody.className = "card-body";
 
-  const divContentCard = document.createElement("div");
-  divContentCard.className = "contentCard";
+    const cardImg = document.createElement("img");
+    cardImg.className = "card-img";
+    cardImg.src = user.imgUser;
 
-  const divParent = document.getElementById("containSlide");
+    const userName = document.createElement("h5");
+    userName.getElementsByTagName = "h5";
+    userName.innerText = user.fullName;
 
-  userCard.appendChild(divInnerCard);
-  userCard.appendChild(divContentCard);
-  divParent.appendChild(userCard);
+    const userSkill = document.createElement("h6");
+    userSkill.getElementsByTagName = "h6";
+    userSkill.innerText = user.skill;
+
+    const userTxt = document.createElement("p");
+    userTxt.className = "p";
+    userTxt.innerText = user.userContent;
+
+    const btn = document.createElement("button");
+    btn.className = "btn-card";
+    btn.innerText = "Message";
+
+    cards.appendChild(card);
+    card.appendChild(cardBody);
+    cardBody.appendChild(cardImg);
+    cardBody.appendChild(userName);
+    cardBody.appendChild(userSkill);
+    cardBody.appendChild(userTxt);
+    cardBody.appendChild(btn);
+    cardsBackground.appendChild(card);
+
+    /*
+   <div class="card">
+  <div class="card-body">
+    <div class="card-img"></div>
+    <h5>AURY Gaël</h5>
+    <h6>Expert - UX / React.js</h6>
+    <p>Dévelopeur Front-end, spécialisé UX</p>
+    <button class="card-button">Message</button>
+  </div>
+</div>
+*/
+  });
 }
-for (let i = 0; i < arrayUser.length; i++) {
-  generateUser(arrayUser[i]);
-}
 
-//   <div class="imgUser innerCard"></div>
-//   <div class="contentCard"></div>
-
-console.log(user1.user());
-console.log(user2.user());
-console.log(user3.user());
-
-// Pour chaque utilisateur, Créer une div.
+generateUser();
