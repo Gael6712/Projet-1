@@ -84,6 +84,7 @@ window.onclick = function (event) {
 //     mainNav.classList.remove("is-sticky");
 //   }
 // });
+<<<<<<< HEAD
 >>>>>>> parent of f827441 ( MERDE)
 
 /*============== Partie About de Raf =============*/
@@ -112,3 +113,5 @@ function AjoutDeLettre() {
     i++;
   }
 }
+=======
+>>>>>>> parent of 0b66b56 (Added about.html aboutstyle.css code in index.js et une image ligth.png)
