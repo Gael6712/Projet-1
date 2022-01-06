@@ -4,6 +4,7 @@
  */
 
 /*   NAVIGATION   */
+<<<<<<< HEAD
 /*=======================================================*/
 const screen = {
   small: 0,
@@ -23,6 +24,8 @@ function resizeHandler() {
 
   console.log(size);
 }
+=======
+>>>>>>> parent of f827441 ( MERDE)
 /*=======================================================*/
 const navSlide = () => {
   const burger = document.querySelector(".burger");
@@ -41,20 +44,13 @@ const navSlide = () => {
 };
 console.log(window);
 navSlide();
+/*   ANIMATION BURGER  */
 
-/* Overlay - Scroll */
-/*=======================================================*/
-window.onscroll = function () {
-  if (
-    document.documentElement.scrollTop - goIn.offsetHeight < goIn.offsetTop &&
-    document.documentElement.scrollTop + goIn.offsetHeight * 1 > goIn.offsetTop
-  ) {
-    goIn.style.cssText = "transform:scale(1);  opacity:1;  transition:1s";
-  } else {
-    goIn.style.cssText = "transform:scale(0);  opacity:0;  ;transition:1s";
-  }
-};
+// /*   STICKY   */
+// window.addEventListener("scroll", function () {
+//   let mainNav = document.querySelector("#mainNav");
 
+<<<<<<< HEAD
 // FROM
 /*=================================================*/
 
@@ -81,11 +77,20 @@ window.onclick = function (event) {
 
 /*======================================================================================================================================*/
 /*============== Partie About de Raf =============*/
+=======
+//   if (window.pageYOffset > 0) {
+//     mainNav.classList.add("is-sticky");
+//   } else {
+//     mainNav.classList.remove("is-sticky");
+//   }
+// });
+>>>>>>> parent of f827441 ( MERDE)
 
+/*============== Partie About de Raf =============*/
 let btn = document.getElementById("btn");
 let light = document.getElementById("light");
-let brightness = document.getElementsByClassName(".presentation");
-console.log(brightness);
+let brightness = document.getElementsByClassName(".presentation")
+console.log(brightness)
 function toggleBtn() {
   btn.classList.toggle("active");
   light.classList.toggle("on");
